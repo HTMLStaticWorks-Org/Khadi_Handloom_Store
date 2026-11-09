@@ -294,6 +294,22 @@ html.dark .kavira-card:hover {
   margin-right: 0 !important;
 }
 
+/* Product card hover button alignment in RTL & LTR */
+.kavira-card .absolute.inset-x-0.bottom-0 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem !important;
+}
+
+.kavira-card .absolute.inset-x-0.bottom-0 > button {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+}
+
 [dir="rtl"] .lucide-chevron-right {
   transform: rotate(180deg);
 }

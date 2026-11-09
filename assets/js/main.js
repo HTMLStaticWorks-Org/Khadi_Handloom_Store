@@ -900,12 +900,12 @@ function createProductCardHtml(product) {
         <img src="${product.image}" alt="${product.name}" class="product-img-zoom w-full h-full object-cover cursor-pointer" onclick="openQuickView('${product.id}')" loading="lazy" />
 
         <!-- Quick View Overlay on Hover -->
-        <div class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center space-x-2">
-          <button onclick="openQuickView('${product.id}')" class="flex-1 py-2 bg-white/90 dark:bg-[#1E1916]/90 hover:bg-white text-[#2C221D] dark:text-white text-xs font-semibold rounded shadow backdrop-blur transition flex items-center justify-center space-x-1">
+        <div class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center gap-2">
+          <button onclick="openQuickView('${product.id}')" class="flex-1 h-9 bg-white/90 dark:bg-[#1E1916]/90 hover:bg-white text-[#2C221D] dark:text-white text-xs font-semibold rounded shadow backdrop-blur transition flex items-center justify-center gap-1.5">
             <i data-lucide="eye" class="w-3.5 h-3.5"></i>
             <span>Quick View</span>
           </button>
-          <button onclick="addToCart('${product.id}')" class="w-9 h-9 bg-[#B96B4B] hover:bg-[#9C5335] text-white rounded flex items-center justify-center shadow transition" title="Add to Bag">
+          <button onclick="addToCart('${product.id}')" class="w-9 h-9 shrink-0 bg-[#B96B4B] hover:bg-[#9C5335] text-white rounded flex items-center justify-center shadow transition" title="Add to Bag">
             <i data-lucide="shopping-bag" class="w-4 h-4"></i>
           </button>
         </div>
@@ -927,11 +927,11 @@ function createProductCardHtml(product) {
         </div>
 
         <div class="pt-3 mt-3 border-t border-[#E6D8C3]/50 dark:border-[#382C24] flex items-center justify-between">
-          <div class="flex items-baseline space-x-2">
+          <div class="flex items-baseline gap-2">
             <span class="text-base font-bold text-[#B96B4B]">${formatINR(product.price)}</span>
             <span class="text-xs text-gray-400 line-through">${formatINR(product.originalPrice)}</span>
           </div>
-          <div class="flex items-center space-x-1 text-amber-500 text-xs font-semibold">
+          <div class="flex items-center gap-1 text-amber-500 text-xs font-semibold">
             <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
             <span>${product.rating}</span>
           </div>
