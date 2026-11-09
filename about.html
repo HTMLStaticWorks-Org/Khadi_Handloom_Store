@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us – The Soul of KAVIRA | Indian Handloom Legacy</title>
+  <meta name="description" content="Learn about KAVIRA's commitment to Indian handloom preservation, authentic Gandhian khadi, ethical artisan empowerment, and sustainable luxury textiles.">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            ivory: '#F7F3E9',
+            beige: '#E6D8C3',
+            terracotta: '#B96B4B',
+            'terracotta-dark': '#9C5335',
+            forest: '#344C3B',
+            'forest-dark': '#243529',
+            deepbrown: '#49372C',
+            gold: '#B89A5A',
+            'gold-light': '#D4BC84',
+            darkbg: '#15110F',
+            darkcard: '#221C18',
+            darkborder: '#382C24'
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            cormorant: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-[#FCFBF8] dark:bg-[#15110F] text-[#2C221D] dark:text-[#F5EFE6] transition-colors duration-300">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 w-full header-glass transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-4 xl:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        <a href="index.html" class="flex items-center space-x-2 sm:space-x-2.5 xl:space-x-3 shrink-0 group">
+          <div class="w-8 h-8 sm:w-9 sm:h-9 xl:w-10 xl:h-10 rounded-full bg-gradient-to-br from-[#B89A5A] to-[#B96B4B] p-0.5 flex items-center justify-center shadow-md">
+            <div class="w-full h-full bg-[#FCFBF8] dark:bg-[#15110F] rounded-full flex items-center justify-center">
+              <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#B96B4B]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M12 3v18M3 12h18M6.5 6.5l11 11M17.5 6.5l-11 11"/>
+              </svg>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-serif text-base sm:text-xl xl:text-2xl font-bold tracking-[0.12em] sm:tracking-[0.2em] xl:tracking-[0.25em] text-[#2C221D] dark:text-[#F5EFE6]">KAVIRA</span>
+            <span class="text-[7px] sm:text-[8px] xl:text-[9px] uppercase tracking-[0.15em] sm:tracking-[0.25em] xl:tracking-[0.3em] text-[#B89A5A] font-semibold -mt-0.5 xl:-mt-1 whitespace-nowrap">Khadi & Handloom</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation with Products Mega Menu -->
+        <nav class="hidden lg:flex items-center space-x-2.5 xl:space-x-6 2xl:space-x-7 shrink-0">
+          <a href="index.html" class="text-xs xl:text-sm font-medium hover:text-[#B96B4B] text-[#49372C] dark:text-[#D1C7BD] transition whitespace-nowrap">Home 1</a>
+          <a href="home-2.html" class="text-xs xl:text-sm font-medium hover:text-[#B96B4B] text-[#49372C] dark:text-[#D1C7BD] transition whitespace-nowrap">Home 2</a>
+          <a href="about.html" class="text-xs xl:text-sm font-semibold text-[#B96B4B] border-b-2 border-[#B96B4B] pb-1 whitespace-nowrap">About</a>
+          
+          <a href="products.html" class="text-xs xl:text-sm font-medium hover:text-[#B96B4B] text-[#49372C] dark:text-[#D1C7BD] transition whitespace-nowrap">Products</a>
+
+          <a href="weaver-stories.html" class="text-xs xl:text-sm font-medium hover:text-[#B96B4B] text-[#49372C] dark:text-[#D1C7BD] transition whitespace-nowrap">Weaver Stories</a>
+          <a href="contact.html" class="text-xs xl:text-sm font-medium hover:text-[#B96B4B] text-[#49372C] dark:text-[#D1C7BD] transition whitespace-nowrap">Contact</a>
+          <a href="signup.html" class="text-xs uppercase tracking-wider font-bold px-2.5 py-1.5 xl:px-3.5 xl:py-1.5 rounded-md btn-terracotta whitespace-nowrap">Sign Up</a>
+        </nav>
+
+        <div class="flex items-center space-x-1 sm:space-x-2 xl:space-x-3 shrink-0">
+          <div class="hidden lg:flex items-center space-x-1 sm:space-x-2 xl:space-x-3">
+            <button class="search-open-btn p-1.5 xl:p-2 rounded-full hover:bg-[#E6D8C3]/50 dark:hover:bg-[#251F1B] text-[#49372C] dark:text-[#D1C7BD] transition" title="Search Handloom Catalogue"><i data-lucide="search" class="w-4 h-4 sm:w-5 sm:h-5"></i></button>
+            <button class="wishlist-open-btn relative p-1.5 xl:p-2 rounded-full hover:bg-[#E6D8C3]/50 dark:hover:bg-[#251F1B] text-[#49372C] dark:text-[#D1C7BD] transition" title="Wishlist">
+              <i data-lucide="heart" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+              <span class="wishlist-count-badge hidden absolute -top-1 -right-1 w-4 h-4 rounded-full bg-[#B96B4B] text-white text-[10px] font-bold flex items-center justify-center">0</span>
+            </button>
+            <button class="cart-open-btn relative p-1.5 xl:p-2 rounded-full hover:bg-[#E6D8C3]/50 dark:hover:bg-[#251F1B] text-[#49372C] dark:text-[#D1C7BD] transition" title="Shopping Bag">
+              <i data-lucide="shopping-bag" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+              <span class="cart-count-badge hidden absolute -top-1 -right-1 w-4 h-4 rounded-full bg-[#344C3B] text-white text-[10px] font-bold flex items-center justify-center">0</span>
+            </button>
+            <button class="theme-toggle-btn p-1.5 xl:p-2 rounded-full hover:bg-[#E6D8C3]/50 dark:hover:bg-[#251F1B] text-[#B89A5A] transition" title="Toggle Light/Dark Theme">
+              <i data-lucide="moon" class="theme-icon-moon w-4 h-4 sm:w-5 sm:h-5"></i>
+              <i data-lucide="sun" class="theme-icon-sun w-4 h-4 sm:w-5 sm:h-5 hidden"></i>
+            </button>
+            <button class="rtl-toggle-btn p-1.5 xl:p-2 rounded-full hover:bg-[#E6D8C3]/50 dark:hover:bg-[#251F1B] text-[#49372C] dark:text-[#D1C7BD] transition" title="Toggle RTL / LTR Direction" aria-label="Toggle Text Direction">
+              <i data-lucide="arrow-left-right" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+            </button>
+          </div>
+          <button id="mobile-menu-toggle" class="lg:hidden p-1.5 sm:p-2 rounded-lg text-[#49372C] dark:text-[#D1C7BD] hover:bg-[#E6D8C3]/40" aria-label="Toggle Navigation Menu"><i data-lucide="menu" class="w-5 h-5 sm:w-6 sm:h-6"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-nav-drawer" class="fixed inset-y-0 left-0 w-80 bg-white dark:bg-[#1A1412] shadow-2xl z-50 p-6 flex flex-col justify-between transform -translate-x-full transition-transform duration-300 lg:hidden overflow-y-auto">
+    <div>
+      <div class="flex items-center justify-between pb-4 border-b border-[#E6D8C3] dark:border-[#382C24]">
+        <div class="flex items-center space-x-2">
+          <span class="font-serif text-xl font-bold tracking-widest text-[#2C221D] dark:text-[#F5EFE6]">KAVIRA</span>
+        </div>
+        <button id="mobile-nav-close" class="p-1 rounded-full text-gray-400 hover:text-red-500">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Quick Action Icons inside Hamburger -->
+      <div class="grid grid-cols-5 gap-2 py-4 my-2 border-b border-[#E6D8C3] dark:border-[#382C24]">
+        <button class="search-open-btn flex flex-col items-center justify-center p-2 rounded-xl text-[#49372C] dark:text-[#D1C7BD] hover:bg-[#E6D8C3]/30 transition" title="Search Catalogue">
+          <i data-lucide="search" class="w-5 h-5"></i>
+          <span class="text-[9px] font-medium mt-1">Search</span>
+        </button>
+        <button class="wishlist-open-btn relative flex flex-col items-center justify-center p-2 rounded-xl text-[#49372C] dark:text-[#D1C7BD] hover:bg-[#E6D8C3]/30 transition" title="Wishlist">
+          <i data-lucide="heart" class="w-5 h-5"></i>
+          <span class="wishlist-count-badge hidden absolute top-1 right-2 w-4 h-4 rounded-full bg-[#B96B4B] text-white text-[9px] font-bold flex items-center justify-center">0</span>
+          <span class="text-[9px] font-medium mt-1">Wishlist</span>
+        </button>
+        <button class="cart-open-btn relative flex flex-col items-center justify-center p-2 rounded-xl text-[#49372C] dark:text-[#D1C7BD] hover:bg-[#E6D8C3]/30 transition" title="Shopping Bag">
+          <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+          <span class="cart-count-badge hidden absolute top-1 right-2 w-4 h-4 rounded-full bg-[#344C3B] text-white text-[9px] font-bold flex items-center justify-center">0</span>
+          <span class="text-[9px] font-medium mt-1">Bag</span>
+        </button>
+        <button class="theme-toggle-btn flex flex-col items-center justify-center p-2 rounded-xl text-[#B89A5A] hover:bg-[#E6D8C3]/30 transition" title="Toggle Theme">
+          <i data-lucide="moon" class="theme-icon-moon w-5 h-5"></i>
+          <i data-lucide="sun" class="theme-icon-sun w-5 h-5 hidden"></i>
+          <span class="text-[9px] font-medium mt-1">Theme</span>
+        </button>
+        <button class="rtl-toggle-btn flex flex-col items-center justify-center p-2 rounded-xl text-[#49372C] dark:text-[#D1C7BD] hover:bg-[#E6D8C3]/30 transition" title="Toggle Text Direction">
+          <i data-lucide="arrow-left-right" class="w-5 h-5"></i>
+          <span class="text-[9px] font-medium mt-1">RTL</span>
+        </button>
+      </div>
+
+      <nav class="mt-6 space-y-4">
+        <a href="index.html" class="block text-gray-700 dark:text-gray-300 hover:text-[#B96B4B]">Home 1</a>
+        <a href="home-2.html" class="block text-gray-700 dark:text-gray-300 hover:text-[#B96B4B]">Home 2</a>
+        <a href="about.html" class="block font-semibold text-[#B96B4B]">About</a>
+        <a href="products.html" class="block text-gray-700 dark:text-gray-300 hover:text-[#B96B4B]">Products</a>
+        <a href="weaver-stories.html" class="block text-gray-700 dark:text-gray-300 hover:text-[#B96B4B]">Weaver Stories</a>
+        <a href="contact.html" class="block text-gray-700 dark:text-gray-300 hover:text-[#B96B4B]">Contact</a>
+        <a href="login.html" class="block text-gray-700 dark:text-gray-300 hover:text-[#B96B4B]">Login</a>
+        <a href="signup.html" class="block text-center py-2.5 rounded-lg btn-terracotta font-semibold text-xs uppercase tracking-wider">Sign Up</a>
+      </nav>
+    </div>
+
+    <div class="pt-6 border-t border-[#E6D8C3] dark:border-[#382C24] text-xs text-[#6B5E55]">
+      <p class="font-medium text-[#2C221D] dark:text-[#F5EFE6]">KAVIRA Handloom Atelier</p>
+      <p class="mt-1">Preserving India's living textile legacies.</p>
+    </div>
+  </div>
+
+  <main>
+    <!-- =========================================================================
+         SECTION 1: ABOUT HERO
+         Premium heritage-inspired brand introduction.
+         ========================================================================= -->
+    <section class="relative py-28 bg-[#201915] text-[#FAF8F5] overflow-hidden">
+      <div class="absolute inset-0 opacity-20">
+        <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=1920&q=80" alt="Khadi Spinning Heritage" class="w-full h-full object-cover" />
+      </div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10" data-aos="fade-up">
+        <span class="text-xs uppercase tracking-[0.3em] text-[#D4BC84] font-bold">The KAVIRA Manifest</span>
+        <h1 class="font-serif text-4xl sm:text-6xl font-bold mt-3 mb-6 text-[#F5EFE6]">
+          Where Ancient Looms Whisper to the Modern World
+        </h1>
+        <div class="weave-divider w-24 mx-auto mb-6"></div>
+        <p class="font-sans text-base sm:text-lg text-[#D1C7BD] font-light leading-relaxed">
+          KAVIRA was born out of an urgent cultural imperative: to revive, sustain, and honor India's incomparable handloom ecosystems. We are not simply an e-commerce platform; we are guardians of a sacred textile civilization.
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 2: OUR STORY
+         Explain KAVIRA's vision and dedication to traditional Indian textile craftsmanship.
+         ========================================================================= -->
+    <section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 relative" data-aos="fade-right">
+          <div class="rounded-3xl overflow-hidden shadow-2xl aspect-[4/3]">
+            <img src="https://images.unsplash.com/photo-1643309053949-99eb896aec0a?auto=format&fit=crop&w=900&q=80" alt="Master Weaver at Work on Traditional Loom" class="w-full h-full object-cover" />
+          </div>
+          <div class="absolute -bottom-6 -right-6 hidden sm:block bg-[#344C3B] text-white p-6 rounded-2xl shadow-xl max-w-xs border border-[#B89A5A]/30">
+            <p class="font-serif text-2xl font-bold text-[#D4BC84]">100%</p>
+            <p class="text-xs text-[#E6D8C3] mt-1">Manual Charkha & Pit Loom Weaving with Zero Synthetic Fibers.</p>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6" data-aos="fade-left">
+          <span class="text-xs uppercase tracking-[0.25em] text-[#B89A5A] font-bold">Our Genesis & Vision</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#2C221D] dark:text-[#F5EFE6] mt-2 mb-6">
+            Dedicated to India's Textile Soul
+          </h2>
+          <div class="space-y-4 text-xs sm:text-sm text-[#6B5E55] dark:text-[#A89A90] leading-relaxed">
+            <p>
+              For centuries, the Indian subcontinent stood as the undisputed textile capital of the world. From gossamer Bengal muslins so fine they could pass through a signet ring, to Kanchipuram mulberry silks steeped in gold, Indian weavers turned threads into sacred poetry.
+            </p>
+            <p>
+              The industrial revolution and synthetic polyester fast fashion pushed millions of weaver families to the brink. In response, **KAVIRA** was created as an uncompromising luxury atelier. We partner directly with artisan guilds across 16 major craft clusters, ensuring zero middlemen and fair dignifying wages.
+            </p>
+            <p>
+              Today, our catalogue spans all 8 foundational pillars of Indian textile life: royal sarees, men’s sartorial tailoring, everyday women’s apparel, gentle baby muslin, organic yardage by the metre, living room dhurries, and handblock dining decor.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 3: OUR VALUES
+         Authenticity, sustainability, artisan empowerment, ethical production, and cultural preservation.
+         ========================================================================= -->
+    <section class="py-24 bg-[#FAF8F5] dark:bg-[#1A1412] border-y border-[#E6D8C3] dark:border-[#382C24]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+          <span class="text-xs uppercase tracking-[0.25em] text-[#B89A5A] font-bold">Guiding Principles</span>
+          <h2 class="font-serif text-3xl sm:text-5xl font-bold text-[#2C221D] dark:text-[#F5EFE6] mt-2 mb-4">
+            The Five Pillars of KAVIRA
+          </h2>
+          <div class="weave-divider w-24 mx-auto mb-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+          <!-- Pillar 1 -->
+          <div class="p-6 rounded-2xl bg-white dark:bg-[#201A16] border border-[#E6D8C3] dark:border-[#382C24] text-center shadow-sm kavira-card" data-aos="fade-up">
+            <div class="w-12 h-12 rounded-full bg-[#B89A5A]/15 text-[#B89A5A] mx-auto flex items-center justify-center mb-4">
+              <i data-lucide="badge-check" class="w-6 h-6"></i>
+            </div>
+            <h4 class="font-serif font-bold text-base text-[#2C221D] dark:text-[#F5EFE6]">Authenticity</h4>
+            <p class="text-xs text-[#6B5E55] dark:text-[#A89A90] mt-2">Every yarn is verified for handloom pedigree with official GI certificates and purity tests.</p>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="p-6 rounded-2xl bg-white dark:bg-[#201A16] border border-[#E6D8C3] dark:border-[#382C24] text-center shadow-sm kavira-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="w-12 h-12 rounded-full bg-[#344C3B]/15 text-[#344C3B] dark:text-[#799e84] mx-auto flex items-center justify-center mb-4">
+              <i data-lucide="leaf" class="w-6 h-6"></i>
+            </div>
+            <h4 class="font-serif font-bold text-base text-[#2C221D] dark:text-[#F5EFE6]">Sustainability</h4>
+            <p class="text-xs text-[#6B5E55] dark:text-[#A89A90] mt-2">Zero carbon footprint pit looms, organic natural dyes, and unbleached cotton packaging.</p>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="p-6 rounded-2xl bg-white dark:bg-[#201A16] border border-[#E6D8C3] dark:border-[#382C24] text-center shadow-sm kavira-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="w-12 h-12 rounded-full bg-[#B96B4B]/15 text-[#B96B4B] mx-auto flex items-center justify-center mb-4">
+              <i data-lucide="users" class="w-6 h-6"></i>
+            </div>
+            <h4 class="font-serif font-bold text-base text-[#2C221D] dark:text-[#F5EFE6]">Artisan Uplift</h4>
+            <p class="text-xs text-[#6B5E55] dark:text-[#A89A90] mt-2">Fair wage equity, pension funds for senior weavers, and vocational healthcare clusters.</p>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="p-6 rounded-2xl bg-white dark:bg-[#201A16] border border-[#E6D8C3] dark:border-[#382C24] text-center shadow-sm kavira-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="w-12 h-12 rounded-full bg-[#49372C]/15 text-[#49372C] dark:text-[#D4BC84] mx-auto flex items-center justify-center mb-4">
+              <i data-lucide="shield-alert" class="w-6 h-6"></i>
+            </div>
+            <h4 class="font-serif font-bold text-base text-[#2C221D] dark:text-[#F5EFE6]">Ethical Production</h4>
+            <p class="text-xs text-[#6B5E55] dark:text-[#A89A90] mt-2">No child labor, no toxic effluents, and complete transparency in the supply network.</p>
+          </div>
+
+          <!-- Pillar 5 -->
+          <div class="p-6 rounded-2xl bg-white dark:bg-[#201A16] border border-[#E6D8C3] dark:border-[#382C24] text-center shadow-sm kavira-card md:col-span-2 md:w-[calc(50%-12px)] md:mx-auto lg:w-full lg:col-span-1" data-aos="fade-up" data-aos-delay="400">
+            <div class="w-12 h-12 rounded-full bg-[#B89A5A]/15 text-[#B89A5A] mx-auto flex items-center justify-center mb-4">
+              <i data-lucide="landmark" class="w-6 h-6"></i>
+            </div>
+            <h4 class="font-serif font-bold text-base text-[#2C221D] dark:text-[#F5EFE6]">Heritage Archive</h4>
+            <p class="text-xs text-[#6B5E55] dark:text-[#A89A90] mt-2">Documenting dying weave structures and passing pit-loom techniques to the next generation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 4: OUR HANDLOOM JOURNEY
+         Interactive timeline explaining spinning, yarn preparation, dyeing, weaving, and finishing.
+         ========================================================================= -->
+    <section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+        <span class="text-xs uppercase tracking-[0.25em] text-[#B89A5A] font-bold">The Slow Creation Timeline</span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-[#2C221D] dark:text-[#F5EFE6] mt-2 mb-4">
+          Our Handloom Journey
+        </h2>
+        <div class="weave-divider w-24 mx-auto mb-4"></div>
+        <p class="text-[#6B5E55] dark:text-[#A89A90] text-sm sm:text-base">
+          A step-by-step passage through the time-honored artisanal rites that create every KAVIRA masterpiece.
+        </p>
+      </div>
+
+      <!-- Timeline steps -->
+      <div class="relative border-l-2 border-[#B89A5A]/40 max-w-3xl mx-auto pl-8 sm:pl-12 space-y-12">
+        
+        <!-- Step 1 -->
+        <div class="relative" data-aos="fade-up">
+          <div class="absolute -left-[41px] sm:-left-[57px] top-0 w-6 h-6 rounded-full bg-[#B89A5A] border-4 border-white dark:border-[#15110F]"></div>
+          <span class="text-xs uppercase font-bold text-[#B89A5A] tracking-wider">Milestone 01</span>
+          <h3 class="font-serif text-2xl font-bold text-[#2C221D] dark:text-[#F5EFE6] mt-1">Spinning on Gandhian Charkhas</h3>
+          <p class="text-xs sm:text-sm text-[#6B5E55] dark:text-[#A89A90] mt-2 leading-relaxed">
+            Indigenous short-staple desi cotton is gently teased and turned on wooden charkhas by elder women spinners in Wardha and Fulia. The result is yarn imbued with organic irregularities and miraculous breathability.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="relative" data-aos="fade-up">
+          <div class="absolute -left-[41px] sm:-left-[57px] top-0 w-6 h-6 rounded-full bg-[#B96B4B] border-4 border-white dark:border-[#15110F]"></div>
+          <span class="text-xs uppercase font-bold text-[#B96B4B] tracking-wider">Milestone 02</span>
+          <h3 class="font-serif text-2xl font-bold text-[#2C221D] dark:text-[#F5EFE6] mt-1">Warp Preparation & Rice Starch Sizing</h3>
+          <p class="text-xs sm:text-sm text-[#6B5E55] dark:text-[#A89A90] mt-2 leading-relaxed">
+            Hanks of yarn are immersed in fermented rice gruel to strengthen the fibers naturally. Hundreds of strands are stretched across bamboo frames along open field corridors at dawn to set the warp tension.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="relative" data-aos="fade-up">
+          <div class="absolute -left-[41px] sm:-left-[57px] top-0 w-6 h-6 rounded-full bg-[#344C3B] border-4 border-white dark:border-[#15110F]"></div>
+          <span class="text-xs uppercase font-bold text-[#344C3B] dark:text-[#799e84] tracking-wider">Milestone 03</span>
+          <h3 class="font-serif text-2xl font-bold text-[#2C221D] dark:text-[#F5EFE6] mt-1">Botanical Dye Baths</h3>
+          <p class="text-xs sm:text-sm text-[#6B5E55] dark:text-[#A89A90] mt-2 leading-relaxed">
+            Weavers utilize ancestral recipes: indigo leaves for royal blues, madder root for deep terracotta reds, turmeric for temple yellows, and rusted iron filings for deep earth blacks.
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="relative" data-aos="fade-up">
+          <div class="absolute -left-[41px] sm:-left-[57px] top-0 w-6 h-6 rounded-full bg-[#49372C] border-4 border-white dark:border-[#15110F]"></div>
+          <span class="text-xs uppercase font-bold text-[#49372C] dark:text-[#D4BC84] tracking-wider">Milestone 04</span>
+          <h3 class="font-serif text-2xl font-bold text-[#2C221D] dark:text-[#F5EFE6] mt-1">Pit Loom Weaving Rhythm</h3>
+          <p class="text-xs sm:text-sm text-[#6B5E55] dark:text-[#A89A90] mt-2 leading-relaxed">
+            The weaver sits dug into the earth on a cool pit loom. Hands move the shuttles across while feet manipulate pedals in synchronization. A single Kanchipuram or Jamdani saree requires 180 to 300 hours of continuous human labor.
+          </p>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="relative" data-aos="fade-up">
+          <div class="absolute -left-[41px] sm:-left-[57px] top-0 w-6 h-6 rounded-full bg-[#B89A5A] border-4 border-white dark:border-[#15110F]"></div>
+          <span class="text-xs uppercase font-bold text-[#B89A5A] tracking-wider">Milestone 05</span>
+          <h3 class="font-serif text-2xl font-bold text-[#2C221D] dark:text-[#F5EFE6] mt-1">Finishing, Inspection & Certification</h3>
+          <p class="text-xs sm:text-sm text-[#6B5E55] dark:text-[#A89A90] mt-2 leading-relaxed">
+            The finished textile is gently washed in clean river waters to relax the fibers, hand-ironed with traditional heavy coal irons, fringed with artisanal tassels, and sealed with government Geographical Indication tags.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 5: OUR COMMITMENT
+         Explain how the brand supports weaving communities and preserves traditional textile skills.
+         Include Explore Collections CTA.
+         ========================================================================= -->
+    <section class="py-24 bg-[#231C18] text-[#FAF8F5] relative overflow-hidden">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10" data-aos="fade-up">
+        <span class="text-xs uppercase tracking-[0.25em] text-[#D4BC84] font-bold">A Living Promise</span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold mt-2 mb-6 text-[#F5EFE6]">
+          Our Commitment to Future Generations
+        </h2>
+        <div class="weave-divider w-24 mx-auto mb-8"></div>
+        <p class="text-[#E6D8C3] text-sm sm:text-base font-light leading-relaxed max-w-3xl mx-auto mb-10">
+          When you invest in a KAVIRA creation, you are directly paying the education fees of weavers' children, funding solar installations in pit-loom villages, and proving that slow, conscious fashion has a glorious future.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="products.html" class="w-full sm:w-64 h-12 px-6 rounded-lg btn-terracotta font-semibold text-xs uppercase tracking-wider shadow-2xl flex items-center justify-center space-x-2 whitespace-nowrap">
+            <span>Explore Collections</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 shrink-0"></i>
+          </a>
+          <a href="contact.html" class="w-full sm:w-64 h-12 px-6 rounded-lg border border-[#B89A5A] text-[#D4BC84] hover:bg-[#B89A5A] hover:text-white font-semibold text-xs uppercase tracking-wider transition flex items-center justify-center whitespace-nowrap">
+            <span>Visit Our Ateliers</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       FOOTER (Adaptive Light Mode / Dark Mode with Original Social Icons & Back to Top)
+       ========================================================================= -->
+  <footer class="bg-[#F5EFE6] dark:bg-[#1A1412] text-[#2C221D] dark:text-[#E6D8C3] pt-16 pb-12 border-t border-[#E6D8C3] dark:border-[#382C24] transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-[#E6D8C3] dark:border-[#382C24]">
+        
+        <!-- Col 1: Brand Info & Original Social Icons -->
+        <div class="lg:col-span-2">
+          <a href="index.html" class="flex items-center space-x-3 mb-4 group">
+            <div class="w-9 h-9 rounded-full bg-gradient-to-br from-[#B89A5A] to-[#B96B4B] p-0.5 flex items-center justify-center shadow-md">
+              <div class="w-full h-full bg-[#FCFBF8] dark:bg-[#15110F] rounded-full flex items-center justify-center">
+                <svg class="w-4 h-4 text-[#B96B4B]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="9"/>
+                  <path d="M12 3v18M3 12h18M6.5 6.5l11 11M17.5 6.5l-11 11"/>
+                </svg>
+              </div>
+            </div>
+            <span class="font-serif text-2xl font-bold tracking-[0.25em] text-[#2C221D] dark:text-[#F5EFE6]">KAVIRA</span>
+          </a>
+          <p class="text-xs text-[#6B5E55] dark:text-[#A89A90] leading-relaxed max-w-sm mb-6">
+            KAVIRA is India's premier conscious Khadi & Handloom lifestyle destination. We bridge centuries of master craftsmanship with contemporary luxury fashion, living textiles, and sustainable ethics.
+          </p>
+
+          <!-- Original Social Icons with Authentic Brand Colors & Hover Effects -->
+          <div class="flex items-center space-x-3">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white dark:bg-[#251F1B] border border-[#E6D8C3] dark:border-[#382C24] text-[#E4405F] flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] hover:text-white hover:border-transparent hover:shadow-lg" title="Instagram">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white dark:bg-[#251F1B] border border-[#E6D8C3] dark:border-[#382C24] text-[#1877F2] flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-[#1877F2] hover:text-white hover:border-transparent hover:shadow-lg" title="Facebook">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white dark:bg-[#251F1B] border border-[#E6D8C3] dark:border-[#382C24] text-[#111111] dark:text-white flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-black hover:text-white hover:border-transparent hover:shadow-lg" title="X (Twitter)">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white dark:bg-[#251F1B] border border-[#E6D8C3] dark:border-[#382C24] text-[#FF0000] flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-[#FF0000] hover:text-white hover:border-transparent hover:shadow-lg" title="YouTube">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white dark:bg-[#251F1B] border border-[#E6D8C3] dark:border-[#382C24] text-[#E60023] flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-[#E60023] hover:text-white hover:border-transparent hover:shadow-lg" title="Pinterest">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: All 8 Product Categories -->
+        <div>
+          <h4 class="text-xs uppercase tracking-widest text-[#B89A5A] font-bold mb-4">Product Guilds</h4>
+          <ul class="space-y-2 text-xs text-[#6B5E55] dark:text-[#A89A90]">
+            <li><a href="products.html?category=sarees" class="hover:text-[#B96B4B] dark:hover:text-white transition">1. Sarees Collection</a></li>
+            <li><a href="products.html?category=womens-clothing" class="hover:text-[#B96B4B] dark:hover:text-white transition">2. Women's Clothing</a></li>
+            <li><a href="products.html?category=mens-clothing" class="hover:text-[#B96B4B] dark:hover:text-white transition">3. Men's Wear & Dhoti</a></li>
+            <li><a href="products.html?category=fabrics-materials" class="hover:text-[#B96B4B] dark:hover:text-white transition">4. Fabrics By Metre</a></li>
+            <li><a href="products.html?category=home-living" class="hover:text-[#B96B4B] dark:hover:text-white transition">5. Home & Living Decor</a></li>
+            <li><a href="products.html?category=bags-accessories" class="hover:text-[#B96B4B] dark:hover:text-white transition">6. Bags & Accessories</a></li>
+            <li><a href="products.html?category=kids-baby" class="hover:text-[#B96B4B] dark:hover:text-white transition">7. Kids & Baby Muslin</a></li>
+            <li><a href="products.html?category=kitchen-dining" class="hover:text-[#B96B4B] dark:hover:text-white transition">8. Kitchen & Dining Linen</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Featured Collections & Quick Links -->
+        <div>
+          <h4 class="text-xs uppercase tracking-widest text-[#B89A5A] font-bold mb-4">Curated Edits</h4>
+          <ul class="space-y-2 text-xs text-[#6B5E55] dark:text-[#A89A90]">
+            <li><a href="products.html?category=new-arrivals" class="hover:text-[#B96B4B] dark:hover:text-white transition">✦ New Arrivals</a></li>
+            <li><a href="products.html?category=best-sellers" class="hover:text-[#B96B4B] dark:hover:text-white transition">✦ Best Sellers</a></li>
+            <li><a href="products.html?category=festive-gifting" class="hover:text-[#B96B4B] dark:hover:text-white transition">✦ Gifting & Festive</a></li>
+            <li class="pt-2"><a href="home-2.html" class="hover:text-[#B96B4B] dark:hover:text-white transition">Home 2 (Editorial Split)</a></li>
+            <li><a href="about.html" class="hover:text-[#B96B4B] dark:hover:text-white transition">Our Heritage Story</a></li>
+            <li><a href="weaver-stories.html" class="hover:text-[#B96B4B] dark:hover:text-white transition">Meet The Artisans</a></li>
+            <li><a href="contact.html" class="hover:text-[#B96B4B] dark:hover:text-white transition">Atelier Locations</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Customer Support & Contact Info -->
+        <div>
+          <h4 class="text-xs uppercase tracking-widest text-[#B89A5A] font-bold mb-4">Customer Atelier</h4>
+          <div class="space-y-3 text-xs text-[#6B5E55] dark:text-[#A89A90]">
+            <p class="flex items-start space-x-2">
+              <i data-lucide="map-pin" class="w-4 h-4 text-[#B89A5A] flex-shrink-0 mt-0.5"></i>
+              <span>KAVIRA Heritage Pavilion, 42 Craft Avenue, Connaught Place, New Delhi - 110001</span>
+            </p>
+            <p class="flex items-center space-x-2">
+              <i data-lucide="phone" class="w-4 h-4 text-[#B89A5A] flex-shrink-0"></i>
+              <span>+91 (011) 4892 7300</span>
+            </p>
+            <p class="flex items-center space-x-2">
+              <i data-lucide="mail" class="w-4 h-4 text-[#B89A5A] flex-shrink-0"></i>
+              <span>curator@kavirahandloom.com</span>
+            </p>
+            <p class="flex items-center space-x-2">
+              <i data-lucide="clock" class="w-4 h-4 text-[#B89A5A] flex-shrink-0"></i>
+              <span>Mon - Sat: 10:00 AM - 7:30 PM IST</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-[#6B5E55] dark:text-[#A89A90] gap-4">
+        <p>© 2026 KAVIRA Khadi & Handloom Lifestyle Ltd. All rights reserved.</p>
+        
+        <div class="flex flex-wrap items-center justify-center gap-6">
+          <a href="#" class="hover:text-[#B96B4B] dark:hover:text-white transition">Privacy Policy</a>
+          <a href="#" class="hover:text-[#B96B4B] dark:hover:text-white transition">Terms of Craftsmanship</a>
+          <a href="#" class="hover:text-[#B96B4B] dark:hover:text-white transition">GI Tag Verification</a>
+          <a href="#" class="hover:text-[#B96B4B] dark:hover:text-white transition">Shipping & Returns</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button in bottom right corner -->
+  <button id="floating-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-6 right-6 z-40 w-11 h-11 rounded-full bg-[#B96B4B] hover:bg-[#9C5335] text-white shadow-xl flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:scale-110" title="Back to Top">
+    <i data-lucide="arrow-up" class="w-5 h-5"></i>
+  </button>
+
+  <!-- Drawers & Modals (Cart, Wishlist, Search, Quick View) -->
+  <div id="cart-drawer-backdrop" class="drawer-backdrop fixed inset-0 bg-black/60 z-[100]"></div>
+  <div id="cart-drawer" class="drawer-panel fixed top-0 right-0 h-full w-full sm:w-[440px] bg-white dark:bg-[#1C1613] z-[101] shadow-2xl flex flex-col justify-between">
+    <div class="p-5 border-b border-[#E6D8C3] dark:border-[#382C24] flex items-center justify-between">
+      <h3 class="font-serif font-bold text-lg">Your Shopping Bag</h3>
+      <button class="cart-close-btn p-1.5 text-gray-400 hover:text-red-500"><i data-lucide="x" class="w-5 h-5"></i></button>
+    </div>
+    <div id="cart-shipping-notice" class="bg-[#F7F3E9] dark:bg-[#251F1B] px-5 py-2.5 text-xs"></div>
+    <div id="cart-drawer-items" class="flex-1 overflow-y-auto p-5 space-y-4"></div>
+    <div id="cart-empty-state" class="hidden flex-1 flex flex-col items-center justify-center p-8 text-center">
+      <h4 class="font-serif font-bold text-base">Your Bag is Empty</h4>
+    </div>
+    <div id="cart-drawer-footer" class="p-5 border-t border-[#E6D8C3] dark:border-[#382C24] bg-[#FAF8F5] dark:bg-[#1E1916]">
+      <div class="flex items-center justify-between mb-4">
+        <span>Subtotal:</span>
+        <span id="cart-subtotal-price" class="font-serif text-lg font-bold text-[#B96B4B]">₹0</span>
+      </div>
+      <button id="cart-checkout-btn" class="w-full py-3.5 btn-terracotta rounded-lg font-semibold text-xs uppercase tracking-wider">Proceed to Demo Checkout</button>
+    </div>
+  </div>
+
+  <div id="wishlist-drawer-backdrop" class="drawer-backdrop fixed inset-0 bg-black/60 z-[100]"></div>
+  <div id="wishlist-drawer" class="drawer-panel fixed top-0 right-0 h-full w-full sm:w-[440px] bg-white dark:bg-[#1C1613] z-[101] shadow-2xl flex flex-col justify-between">
+    <div class="p-5 border-b border-[#E6D8C3] dark:border-[#382C24] flex items-center justify-between">
+      <h3 class="font-serif font-bold text-lg">Saved Treasures</h3>
+      <button class="wishlist-close-btn p-1.5 text-gray-400 hover:text-red-500"><i data-lucide="x" class="w-5 h-5"></i></button>
+    </div>
+    <div id="wishlist-drawer-items" class="flex-1 overflow-y-auto p-5 space-y-4"></div>
+    <div id="wishlist-empty-state" class="hidden flex-1 flex flex-col items-center justify-center p-8 text-center">
+      <h4 class="font-serif font-bold text-base">No Saved Items</h4>
+    </div>
+  </div>
+
+  <div id="search-modal" class="search-modal fixed inset-0 bg-black/75 backdrop-blur-sm z-[150] flex items-start justify-center p-4 sm:p-10">
+    <div class="w-full max-w-2xl bg-white dark:bg-[#1C1613] rounded-2xl shadow-2xl border border-[#E6D8C3] dark:border-[#382C24] overflow-hidden">
+      <div class="p-4 border-b border-[#E6D8C3] dark:border-[#382C24] flex items-center space-x-3">
+        <i data-lucide="search" class="w-5 h-5 text-[#B89A5A]"></i>
+        <input id="global-search-input" type="text" placeholder="Search handloom catalogue..." class="flex-1 text-sm bg-transparent border-none focus:outline-none" />
+        <button class="search-close-btn p-1 text-gray-400 hover:text-red-500"><i data-lucide="x" class="w-5 h-5"></i></button>
+      </div>
+      <div id="search-results-list" class="max-h-[60vh] overflow-y-auto p-4 space-y-2"></div>
+    </div>
+  </div>
+
+  <div id="quick-view-modal" class="hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-[160] items-center justify-center p-4 overflow-y-auto">
+    <div class="relative w-full max-w-3xl bg-white dark:bg-[#1E1916] rounded-2xl shadow-2xl border border-[#E6D8C3] dark:border-[#382C24] overflow-hidden my-8">
+      <button onclick="closeQuickView()" class="absolute top-4 right-4 z-20 w-8 h-8 rounded-full bg-black/20 text-gray-700 dark:text-gray-300"><i data-lucide="x" class="w-4 h-4"></i></button>
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="bg-[#F7F3E9] dark:bg-[#251F1B] p-6 flex items-center justify-center">
+          <img id="qv-main-image" src="" alt="Product" class="max-h-96 w-full object-cover rounded-xl" />
+        </div>
+        <div class="p-6 sm:p-8 flex flex-col justify-between">
+          <div>
+            <span id="qv-category" class="text-[10px] font-bold uppercase text-[#B89A5A]">Category</span>
+            <h3 id="qv-title" class="font-serif text-xl sm:text-2xl font-bold mt-1 mb-2">Product Name</h3>
+            <div class="flex items-baseline space-x-3 mb-4">
+              <span id="qv-price" class="text-xl font-bold text-[#B96B4B]">₹0</span>
+              <span id="qv-original-price" class="text-xs text-gray-400 line-through">₹0</span>
+              <span id="qv-discount" class="text-[10px] font-bold px-2 py-0.5 rounded bg-[#B96B4B]/15 text-[#B96B4B]">0% OFF</span>
+            </div>
+            <div class="bg-[#FAF8F5] dark:bg-[#251F1B] p-3 rounded-lg border border-[#E6D8C3] dark:border-[#382C24] mb-4 space-y-1.5 text-xs">
+              <div><strong class="text-[#B89A5A] uppercase text-[10px]">Origin:</strong> <span id="qv-origin"></span></div>
+              <div><strong class="text-[#B89A5A] uppercase text-[10px]">Fabric:</strong> <span id="qv-fabric"></span></div>
+              <div><strong class="text-[#B89A5A] uppercase text-[10px]">Loom:</strong> <span id="qv-weave"></span></div>
+              <div id="qv-specific-spec" class="hidden"></div>
+            </div>
+            <p id="qv-description" class="text-xs text-[#6B5E55] dark:text-[#A89A90] mb-4 line-clamp-3"></p>
+            <div id="qv-sizes-container" class="mb-4 hidden">
+              <span class="text-xs font-semibold block mb-1.5">Select Size:</span>
+              <div id="qv-sizes-list" class="flex flex-wrap gap-2"></div>
+            </div>
+            <div id="qv-colors-container" class="mb-4 hidden">
+              <span class="text-xs font-semibold block mb-1.5">Colors:</span>
+              <div id="qv-colors-list" class="flex flex-wrap gap-1.5"></div>
+            </div>
+          </div>
+          <div class="pt-4 border-t border-[#E6D8C3] dark:border-[#382C24]">
+            <div class="flex items-center space-x-3 mb-3">
+              <div class="flex items-center border border-[#E6D8C3] dark:border-[#382C24] rounded-lg">
+                <button type="button" onclick="decreaseQty()" class="px-3 py-2 text-sm">-</button>
+                <input id="qv-qty-input" type="number" value="1" min="1" max="10" class="w-12 text-center text-xs font-bold bg-transparent border-none" readonly />
+                <button type="button" onclick="increaseQty()" class="px-3 py-2 text-sm">+</button>
+              </div>
+              <button id="qv-add-cart-btn" class="flex-1 py-3 btn-terracotta rounded-lg font-semibold text-xs uppercase tracking-wider flex items-center justify-center space-x-1.5">
+                <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+                <span>Add to Bag</span>
+              </button>
+              <button id="qv-wishlist-btn" class="p-3 border rounded-lg text-gray-500 hover:text-[#B96B4B]"><i data-lucide="heart" class="w-4 h-4"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

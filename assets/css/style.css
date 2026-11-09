@@ -1,0 +1,342 @@
+/* ==========================================================================
+   KAVIRA - Indian Khadi & Handloom Lifestyle Store
+   Custom Stylesheet, Handloom Motifs, RTL & Dark Mode
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --color-warm-ivory: #F7F3E9;
+  --color-natural-beige: #E6D8C3;
+  --color-terracotta: #B96B4B;
+  --color-terracotta-dark: #9C5335;
+  --color-forest-green: #344C3B;
+  --color-forest-light: #466350;
+  --color-deep-brown: #49372C;
+  --color-muted-gold: #B89A5A;
+  --color-gold-light: #D4BC84;
+  --color-cream-bg: #FCFBF8;
+  --color-text-main: #2C221D;
+  --color-text-muted: #6B5E55;
+  --color-border-subtle: #E8DFC8;
+}
+
+html.dark {
+  --color-warm-ivory: #1D1815;
+  --color-natural-beige: #2A221C;
+  --color-cream-bg: #15110F;
+  --color-text-main: #F5EFE6;
+  --color-text-muted: #B3A498;
+  --color-border-subtle: #382C24;
+}
+
+/* Base resets & typography */
+html {
+  overflow-x: clip;
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--color-cream-bg);
+  color: var(--color-text-main);
+  overflow-x: clip;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main,
+section,
+footer {
+  overflow-x: clip;
+  max-width: 100%;
+}
+
+header.sticky {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0 !important;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 100%;
+  z-index: 50;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-cormorant {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+/* Subtle Indian Handloom Motif Pattern Overlay */
+.handloom-pattern-bg {
+  background-image: radial-gradient(circle at 1px 1px, rgba(184, 154, 90, 0.12) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+html.dark .handloom-pattern-bg {
+  background-image: radial-gradient(circle at 1px 1px, rgba(184, 154, 90, 0.08) 1px, transparent 0);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F0EAE1;
+}
+html.dark ::-webkit-scrollbar-track {
+  background: #1F1916;
+}
+::-webkit-scrollbar-thumb {
+  background: #B96B4B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9C5335;
+}
+
+/* Glassmorphism & Sticky Header */
+.header-glass {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background-color: rgba(252, 251, 248, 0.94);
+  border-bottom: 1px solid rgba(230, 216, 195, 0.6);
+}
+html.dark .header-glass {
+  background-color: rgba(21, 17, 15, 0.94);
+  border-bottom: 1px solid rgba(56, 44, 36, 0.7);
+}
+
+/* Indian Handloom Gold Borders & Accents */
+.border-handloom {
+  border-color: #E6D8C3;
+}
+html.dark .border-handloom {
+  border-color: #382C24;
+}
+
+.text-gold-accent {
+  color: #B89A5A;
+}
+
+.bg-gold-accent {
+  background-color: #B89A5A;
+}
+
+/* Handloom Weaving Border Line */
+.weave-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #B89A5A, #B96B4B, #B89A5A, transparent);
+}
+
+/* Card Hover Animations */
+.kavira-card {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.kavira-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 30px -10px rgba(73, 55, 44, 0.12);
+}
+html.dark .kavira-card:hover {
+  box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.product-img-zoom {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.kavira-card:hover .product-img-zoom {
+  transform: scale(1.06);
+}
+
+/* Buttons */
+.btn-terracotta {
+  background-color: #B96B4B;
+  color: #FFFFFF;
+  transition: all 0.3s ease;
+}
+.btn-terracotta:hover {
+  background-color: #9C5335;
+  box-shadow: 0 6px 16px rgba(185, 107, 75, 0.35);
+}
+
+.btn-forest {
+  background-color: #344C3B;
+  color: #FFFFFF;
+  transition: all 0.3s ease;
+}
+.btn-forest:hover {
+  background-color: #26382B;
+  box-shadow: 0 6px 16px rgba(52, 76, 59, 0.35);
+}
+
+.btn-outline-gold {
+  border: 1px solid #B89A5A;
+  color: #B89A5A;
+  transition: all 0.3s ease;
+}
+.btn-outline-gold:hover {
+  background-color: #B89A5A;
+  color: #FFFFFF;
+}
+
+/* Modals & Drawers */
+.drawer-backdrop {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.drawer-backdrop.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.drawer-panel {
+  transform: translateX(100%);
+  visibility: hidden;
+  pointer-events: none;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.35s;
+}
+[dir="rtl"] .drawer-panel {
+  transform: translateX(-100%);
+}
+.drawer-panel.active {
+  transform: translateX(0);
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.search-modal {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.search-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* RTL Support Rules */
+[dir="rtl"] {
+  text-align: right;
+  direction: rtl;
+}
+
+[dir="rtl"] .space-x-reverse > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+}
+
+[dir="rtl"] .lucide-chevron-right {
+  transform: rotate(180deg);
+}
+
+[dir="rtl"] .lucide-arrow-right {
+  transform: rotate(180deg);
+}
+
+[dir="rtl"] .lucide-chevron-left {
+  transform: rotate(180deg);
+}
+
+[dir="rtl"] .lucide-arrow-left {
+  transform: rotate(180deg);
+}
+
+/* Badge styling */
+.badge-gold {
+  background-color: rgba(184, 154, 90, 0.15);
+  color: #B89A5A;
+  border: 1px solid rgba(184, 154, 90, 0.3);
+}
+
+.badge-terracotta {
+  background-color: rgba(185, 107, 75, 0.15);
+  color: #B96B4B;
+  border: 1px solid rgba(185, 107, 75, 0.3);
+}
+
+.badge-forest {
+  background-color: rgba(52, 76, 59, 0.15);
+  color: #344C3B;
+  border: 1px solid rgba(52, 76, 59, 0.3);
+}
+
+html.dark .badge-forest {
+  color: #799e84;
+}
+
+/* Ticker marquee animation */
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-ticker {
+  display: flex;
+  width: 200%;
+  animation: ticker 30s linear infinite;
+}
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+[dir="rtl"] .animate-ticker {
+  animation: ticker-rtl 30s linear infinite;
+}
+@keyframes ticker-rtl {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(50%); }
+}
+
+/* Mobile Navigation Drawer & Backdrop */
+#mobile-nav-drawer {
+  visibility: hidden;
+  pointer-events: none;
+  max-width: 85vw;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s;
+  will-change: transform;
+}
+
+#mobile-nav-drawer.active,
+#mobile-nav-drawer.translate-x-0 {
+  transform: translateX(0) !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+
+[dir="rtl"] #mobile-nav-drawer {
+  left: auto !important;
+  right: 0 !important;
+  transform: translateX(100%) !important;
+}
+
+[dir="rtl"] #mobile-nav-drawer.active,
+[dir="rtl"] #mobile-nav-drawer.translate-x-0 {
+  transform: translateX(0) !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+
+#mobile-nav-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(26, 20, 18, 0.65);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 49;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+#mobile-nav-backdrop.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
