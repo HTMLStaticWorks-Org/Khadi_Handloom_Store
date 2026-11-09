@@ -212,9 +212,10 @@ html.dark .kavira-card:hover {
   transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.35s;
 }
 [dir="rtl"] .drawer-panel {
-  transform: translateX(-100%);
+  transform: translateX(100%);
 }
-.drawer-panel.active {
+.drawer-panel.active,
+[dir="rtl"] .drawer-panel.active {
   transform: translateX(0);
   visibility: visible;
   pointer-events: auto;
@@ -344,6 +345,36 @@ footer p.flex {
 footer p.flex > * {
   margin-left: 0 !important;
   margin-right: 0 !important;
+}
+
+/* Cart & Wishlist Drawer Icon Alignment in LTR & RTL */
+.drawer-header-title,
+#cart-drawer > div:first-child > div,
+#wishlist-drawer > div:first-child > div,
+#cart-checkout-btn {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.625rem !important;
+}
+
+.drawer-header-title > *,
+#cart-drawer > div:first-child > div > *,
+#wishlist-drawer > div:first-child > div > *,
+#cart-checkout-btn > *,
+#cart-drawer-items > div > *,
+#wishlist-drawer-items > div > *,
+#wishlist-drawer-items button > * {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+#cart-drawer-items > div,
+#wishlist-drawer-items > div {
+  gap: 1rem !important;
+}
+
+#wishlist-drawer-items button {
+  gap: 0.375rem !important;
 }
 
 /* Login & Sign Up Page Icon Alignment in LTR & RTL */

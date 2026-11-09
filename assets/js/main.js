@@ -291,13 +291,13 @@ function renderCartDrawer() {
         <img src="${item.image}" alt="${item.name}" class="w-16 h-20 object-cover rounded-md flex-shrink-0" />
         <div class="flex-1 min-w-0">
           <h4 class="text-xs uppercase tracking-wider text-[#B89A5A] font-semibold">${item.category}</h4>
-          <h3 class="text-sm font-serif font-bold text-[#2C221D] dark:text-[#F5EFE6] truncate">${item.name}</h3>
+          <h3 class="text-sm font-serif font-bold text-[#2C221D] dark:text-[#F5EFE6] truncate"><bdi>${item.name}</bdi></h3>
           <div class="text-xs text-[#6B5E55] dark:text-[#A89A90] mt-0.5 flex flex-wrap items-center gap-2">
-            ${item.size ? `<span>Size: <strong class="text-[#2C221D] dark:text-[#F5EFE6]">${item.size}</strong></span>` : ''}
-            ${item.color ? `<span>Color: <strong class="text-[#2C221D] dark:text-[#F5EFE6]">${item.color}</strong></span>` : ''}
+            ${item.size ? `<span><bdi>Size:</bdi> <strong class="text-[#2C221D] dark:text-[#F5EFE6]"><bdi>${item.size}</bdi></strong></span>` : ''}
+            ${item.color ? `<span><bdi>Color:</bdi> <strong class="text-[#2C221D] dark:text-[#F5EFE6]"><bdi>${item.color}</bdi></strong></span>` : ''}
           </div>
           <div class="flex items-center justify-between mt-2">
-            <span class="text-sm font-bold text-[#B96B4B]">${formatINR(item.price)}</span>
+            <span class="text-sm font-bold text-[#B96B4B]"><bdi>${formatINR(item.price)}</bdi></span>
             <div class="flex items-center border border-[#E6D8C3] dark:border-[#4A3C32] rounded">
               <button onclick="updateCartQuantity(${index}, -1)" class="px-2 py-0.5 text-xs text-[#49372C] dark:text-[#F5EFE6] hover:bg-[#E6D8C3] dark:hover:bg-[#382C24] transition">-</button>
               <span class="px-2 text-xs font-semibold">${item.quantity}</span>
@@ -305,20 +305,20 @@ function renderCartDrawer() {
             </div>
           </div>
         </div>
-        <button onclick="removeFromCart(${index})" class="text-gray-400 hover:text-red-500 p-1 transition" title="Remove item">
+        <button onclick="removeFromCart(${index})" class="text-gray-400 hover:text-red-500 p-1 transition shrink-0" title="Remove item">
           <i data-lucide="trash-2" class="w-4 h-4"></i>
         </button>
       </div>
     `;
   }).join('');
 
-  if (subtotalEl) subtotalEl.textContent = formatINR(subtotal);
+  if (subtotalEl) subtotalEl.innerHTML = `<bdi>${formatINR(subtotal)}</bdi>`;
   if (shippingEl) {
     if (subtotal >= 1999) {
-      shippingEl.innerHTML = `<span class="text-emerald-700 dark:text-emerald-400 font-semibold flex items-center gap-1.5"><i data-lucide="sparkles" class="w-3.5 h-3.5"></i> Congratulations! You've unlocked FREE Insured Shipping across India.</span>`;
+      shippingEl.innerHTML = `<span class="text-emerald-700 dark:text-emerald-400 font-semibold flex items-center gap-2"><i data-lucide="sparkles" class="w-3.5 h-3.5 shrink-0"></i> <bdi>Congratulations! You've unlocked FREE Insured Shipping across India.</bdi></span>`;
     } else {
       const remaining = 1999 - subtotal;
-      shippingEl.innerHTML = `Add <strong>${formatINR(remaining)}</strong> more to unlock <strong>FREE Shipping</strong>.`;
+      shippingEl.innerHTML = `<bdi>Add <strong>${formatINR(remaining)}</strong> more to unlock <strong>FREE Shipping</strong>.</bdi>`;
     }
   }
 
@@ -345,17 +345,17 @@ function renderWishlistDrawer() {
       <img src="${p.image}" alt="${p.name}" class="w-16 h-20 object-cover rounded-md flex-shrink-0" />
       <div class="flex-1 min-w-0">
         <h4 class="text-xs uppercase tracking-wider text-[#B89A5A] font-semibold">${p.categoryName}</h4>
-        <h3 class="text-sm font-serif font-bold text-[#2C221D] dark:text-[#F5EFE6] truncate">${p.name}</h3>
-        <p class="text-xs text-[#6B5E55] dark:text-[#A89A90] truncate">${p.origin}</p>
+        <h3 class="text-sm font-serif font-bold text-[#2C221D] dark:text-[#F5EFE6] truncate"><bdi>${p.name}</bdi></h3>
+        <p class="text-xs text-[#6B5E55] dark:text-[#A89A90] truncate"><bdi>${p.origin}</bdi></p>
         <div class="flex items-center justify-between mt-2">
-          <span class="text-sm font-bold text-[#B96B4B]">${formatINR(p.price)}</span>
-          <button onclick="addToCart('${p.id}'); toggleWishlist('${p.id}');" class="px-3 py-1 bg-[#344C3B] hover:bg-[#26382B] text-white text-xs rounded transition flex items-center gap-1">
-            <i data-lucide="shopping-bag" class="w-3 h-3"></i>
+          <span class="text-sm font-bold text-[#B96B4B]"><bdi>${formatINR(p.price)}</bdi></span>
+          <button onclick="addToCart('${p.id}'); toggleWishlist('${p.id}');" class="px-3 py-1.5 bg-[#344C3B] hover:bg-[#26382B] text-white text-xs rounded transition inline-flex items-center gap-1.5">
+            <i data-lucide="shopping-bag" class="w-3.5 h-3.5 shrink-0"></i>
             <span>Move to Bag</span>
           </button>
         </div>
       </div>
-      <button onclick="toggleWishlist('${p.id}')" class="text-gray-400 hover:text-red-500 p-1 transition" title="Remove from wishlist">
+      <button onclick="toggleWishlist('${p.id}')" class="text-gray-400 hover:text-red-500 p-1 transition shrink-0" title="Remove from wishlist">
         <i data-lucide="x" class="w-4 h-4"></i>
       </button>
     </div>
