@@ -377,6 +377,23 @@ footer p.flex > * {
   gap: 0.375rem !important;
 }
 
+/* Home 1 New Arrivals & Best Sellers Mini Cards Alignment (1024px & RTL/LTR) */
+.showcase-mini-card {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.showcase-mini-card button {
+  white-space: nowrap !important;
+  flex-shrink: 0;
+}
+
+.showcase-mini-card span.uppercase {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* Login & Sign Up Page Icon Alignment in LTR & RTL */
 .auth-checkbox-label,
 .auth-submit-btn {
