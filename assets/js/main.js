@@ -129,7 +129,7 @@ function showToast(message, type = 'success') {
   }
 
   const toast = document.createElement('div');
-  toast.className = `pointer-events-auto flex items-center space-x-3 px-4 py-3 rounded-lg shadow-xl text-sm font-medium transition-all duration-300 transform translate-y-4 opacity-0 ${
+  toast.className = `pointer-events-auto flex items-center gap-3 px-4 py-3 rounded-lg shadow-xl text-sm font-medium transition-all duration-300 transform translate-y-4 opacity-0 ${
     type === 'success' 
       ? 'bg-[#344C3B] text-white border border-[#B89A5A]' 
       : type === 'info' 
@@ -287,12 +287,12 @@ function renderCartDrawer() {
     const itemTotal = item.price * item.quantity;
     subtotal += itemTotal;
     return `
-      <div class="flex items-center space-x-4 p-3 bg-[#FAF8F5] dark:bg-[#251F1B] rounded-lg border border-[#E6D8C3] dark:border-[#382C24]">
+      <div class="flex items-center gap-4 p-3 bg-[#FAF8F5] dark:bg-[#251F1B] rounded-lg border border-[#E6D8C3] dark:border-[#382C24]">
         <img src="${item.image}" alt="${item.name}" class="w-16 h-20 object-cover rounded-md flex-shrink-0" />
         <div class="flex-1 min-w-0">
           <h4 class="text-xs uppercase tracking-wider text-[#B89A5A] font-semibold">${item.category}</h4>
           <h3 class="text-sm font-serif font-bold text-[#2C221D] dark:text-[#F5EFE6] truncate">${item.name}</h3>
-          <div class="text-xs text-[#6B5E55] dark:text-[#A89A90] mt-0.5 space-x-2">
+          <div class="text-xs text-[#6B5E55] dark:text-[#A89A90] mt-0.5 flex flex-wrap items-center gap-2">
             ${item.size ? `<span>Size: <strong class="text-[#2C221D] dark:text-[#F5EFE6]">${item.size}</strong></span>` : ''}
             ${item.color ? `<span>Color: <strong class="text-[#2C221D] dark:text-[#F5EFE6]">${item.color}</strong></span>` : ''}
           </div>
@@ -341,7 +341,7 @@ function renderWishlistDrawer() {
   if (emptyState) emptyState.classList.add('hidden');
 
   container.innerHTML = wishedProducts.map(p => `
-    <div class="flex items-center space-x-4 p-3 bg-[#FAF8F5] dark:bg-[#251F1B] rounded-lg border border-[#E6D8C3] dark:border-[#382C24]">
+    <div class="flex items-center gap-4 p-3 bg-[#FAF8F5] dark:bg-[#251F1B] rounded-lg border border-[#E6D8C3] dark:border-[#382C24]">
       <img src="${p.image}" alt="${p.name}" class="w-16 h-20 object-cover rounded-md flex-shrink-0" />
       <div class="flex-1 min-w-0">
         <h4 class="text-xs uppercase tracking-wider text-[#B89A5A] font-semibold">${p.categoryName}</h4>
@@ -349,7 +349,7 @@ function renderWishlistDrawer() {
         <p class="text-xs text-[#6B5E55] dark:text-[#A89A90] truncate">${p.origin}</p>
         <div class="flex items-center justify-between mt-2">
           <span class="text-sm font-bold text-[#B96B4B]">${formatINR(p.price)}</span>
-          <button onclick="addToCart('${p.id}'); toggleWishlist('${p.id}');" class="px-3 py-1 bg-[#344C3B] hover:bg-[#26382B] text-white text-xs rounded transition flex items-center space-x-1">
+          <button onclick="addToCart('${p.id}'); toggleWishlist('${p.id}');" class="px-3 py-1 bg-[#344C3B] hover:bg-[#26382B] text-white text-xs rounded transition flex items-center gap-1">
             <i data-lucide="shopping-bag" class="w-3 h-3"></i>
             <span>Move to Bag</span>
           </button>
@@ -710,10 +710,10 @@ function handleGlobalSearch(e) {
   }
 
   resultsContainer.innerHTML = matches.map(p => `
-    <div class="flex items-center space-x-3 p-2.5 rounded-lg hover:bg-[#FAF8F5] dark:hover:bg-[#251F1B] transition cursor-pointer border-b border-[#E6D8C3]/30 dark:border-[#382C24]" onclick="closeSearchModal(); openQuickView('${p.id}');">
+    <div class="flex items-center gap-3 p-2.5 rounded-lg hover:bg-[#FAF8F5] dark:hover:bg-[#251F1B] transition cursor-pointer border-b border-[#E6D8C3]/30 dark:border-[#382C24]" onclick="closeSearchModal(); openQuickView('${p.id}');">
       <img src="${p.image}" alt="${p.name}" class="w-12 h-14 object-cover rounded flex-shrink-0" />
       <div class="flex-1 min-w-0">
-        <div class="flex items-center space-x-2">
+        <div class="flex items-center gap-2">
           <span class="text-[10px] uppercase font-bold text-[#B89A5A] tracking-wider">${p.categoryName}</span>
           <span class="text-[10px] text-gray-400">• ${p.origin}</span>
         </div>
@@ -1089,12 +1089,12 @@ function openDashboardModal() {
       <div class="relative w-full max-w-2xl bg-[#FAF8F5] dark:bg-[#1C1613] rounded-2xl shadow-2xl border border-[#E6D8C3] dark:border-[#382C24] overflow-hidden max-h-[90vh] flex flex-col transform transition-all duration-300">
         <!-- Header -->
         <div class="px-6 py-5 bg-[#F4EFEA] dark:bg-[#251F1B] border-b border-[#E6D8C3] dark:border-[#382C24] flex items-center justify-between">
-          <div class="flex items-center space-x-3">
+          <div class="flex items-center gap-3">
             <div class="w-10 h-10 rounded-full bg-[#B96B4B]/15 dark:bg-[#B96B4B]/30 flex items-center justify-center text-[#B96B4B]">
               <i data-lucide="user" class="w-5 h-5"></i>
             </div>
             <div>
-              <div class="flex items-center space-x-2">
+              <div class="flex items-center gap-2">
                 <h3 class="font-serif font-bold text-lg text-[#2C221D] dark:text-[#F5EFE6]">Patron Dashboard</h3>
                 <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-[#B89A5A]/15 text-[#B89A5A] border border-[#B89A5A]/30">Gold Patron</span>
               </div>
@@ -1132,7 +1132,7 @@ function openDashboardModal() {
             </div>
             <div class="space-y-2.5">
               <div class="p-3 rounded-xl bg-white dark:bg-[#251F1B] border border-[#E6D8C3]/60 dark:border-[#382C24] flex items-center justify-between">
-                <div class="flex items-center space-x-3">
+                <div class="flex items-center gap-3">
                   <div class="w-10 h-10 rounded-lg bg-[#E6D8C3]/40 dark:bg-[#382C24] flex items-center justify-center text-[#B96B4B]">
                     <i data-lucide="package-check" class="w-5 h-5"></i>
                   </div>
@@ -1147,7 +1147,7 @@ function openDashboardModal() {
                 </div>
               </div>
               <div class="p-3 rounded-xl bg-white dark:bg-[#251F1B] border border-[#E6D8C3]/60 dark:border-[#382C24] flex items-center justify-between">
-                <div class="flex items-center space-x-3">
+                <div class="flex items-center gap-3">
                   <div class="w-10 h-10 rounded-lg bg-[#E6D8C3]/40 dark:bg-[#382C24] flex items-center justify-center text-[#B89A5A]">
                     <i data-lucide="truck" class="w-5 h-5"></i>
                   </div>
@@ -1168,14 +1168,14 @@ function openDashboardModal() {
           <div>
             <h4 class="text-xs uppercase font-bold tracking-wider text-[#6B5E55] dark:text-[#9E8E81] mb-3">Patron Guild Connections</h4>
             <div class="grid grid-cols-2 gap-3">
-              <a href="weaver-stories.html" class="p-3 rounded-xl bg-white dark:bg-[#251F1B] border border-[#E6D8C3]/60 dark:border-[#382C24] hover:border-[#B96B4B] transition flex items-center space-x-3 group">
+              <a href="weaver-stories.html" class="p-3 rounded-xl bg-white dark:bg-[#251F1B] border border-[#E6D8C3]/60 dark:border-[#382C24] hover:border-[#B96B4B] transition flex items-center gap-3 group">
                 <div class="w-8 h-8 rounded-full bg-[#B96B4B]/10 text-[#B96B4B] flex items-center justify-center font-bold text-xs">DK</div>
                 <div class="min-w-0">
                   <p class="text-xs font-semibold text-[#2C221D] dark:text-[#F5EFE6] truncate group-hover:text-[#B96B4B] transition">Devaki & Ramaswamy</p>
                   <p class="text-[10px] text-[#6B5E55] dark:text-[#9E8E81]">Kanchipuram Silk Guild</p>
                 </div>
               </a>
-              <a href="weaver-stories.html" class="p-3 rounded-xl bg-white dark:bg-[#251F1B] border border-[#E6D8C3]/60 dark:border-[#382C24] hover:border-[#B96B4B] transition flex items-center space-x-3 group">
+              <a href="weaver-stories.html" class="p-3 rounded-xl bg-white dark:bg-[#251F1B] border border-[#E6D8C3]/60 dark:border-[#382C24] hover:border-[#B96B4B] transition flex items-center gap-3 group">
                 <div class="w-8 h-8 rounded-full bg-[#2E5A44]/10 text-[#2E5A44] flex items-center justify-center font-bold text-xs">SC</div>
                 <div class="min-w-0">
                   <p class="text-xs font-semibold text-[#2C221D] dark:text-[#F5EFE6] truncate group-hover:text-[#B96B4B] transition">Santosh Chitrakar</p>
@@ -1188,7 +1188,7 @@ function openDashboardModal() {
 
         <!-- Footer Actions -->
         <div class="px-6 py-4 bg-[#F4EFEA] dark:bg-[#251F1B] border-t border-[#E6D8C3] dark:border-[#382C24] flex items-center justify-between">
-          <a href="login.html" class="text-xs text-[#6B5E55] dark:text-[#9E8E81] hover:text-[#B96B4B] transition flex items-center space-x-1.5">
+          <a href="login.html" class="text-xs text-[#6B5E55] dark:text-[#9E8E81] hover:text-[#B96B4B] transition flex items-center gap-1.5">
             <i data-lucide="log-out" class="w-3.5 h-3.5"></i>
             <span>Switch Account / Sign Out</span>
           </a>

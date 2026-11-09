@@ -48,7 +48,7 @@
 
   <!-- Minimal Auth Header with Light/Dark and RTL Toggle (NO regular public header) -->
   <header class="py-6 px-6 sm:px-12 flex items-center justify-end">
-    <div class="flex items-center space-x-3">
+    <div class="flex items-center gap-3">
       <!-- Light / Dark toggle -->
       <button class="theme-toggle-btn p-2 rounded-full hover:bg-[#E6D8C3]/50 dark:hover:bg-[#251F1B] text-[#B89A5A] transition" title="Toggle Theme">
         <i data-lucide="moon" class="theme-icon-moon w-5 h-5"></i>
@@ -71,7 +71,7 @@
 
       <!-- Centered Logo + Brand Name Side-by-Side in Card -->
       <div class="flex justify-center mb-6 pt-2">
-        <a href="index.html" class="inline-flex items-center space-x-3 group">
+        <a href="index.html" class="inline-flex items-center gap-3 group">
           <div class="w-11 h-11 rounded-full bg-gradient-to-br from-[#B89A5A] to-[#B96B4B] p-0.5 flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
             <div class="w-full h-full bg-[#FCFBF8] dark:bg-[#15110F] rounded-full flex items-center justify-center">
               <svg class="w-5 h-5 text-[#B96B4B]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -120,14 +120,14 @@
 
         <!-- Remember Me Checkbox -->
         <div class="flex items-center justify-between text-xs">
-          <label class="flex items-center space-x-2 text-[#6B5E55] dark:text-[#A89A90] cursor-pointer">
+          <label class="flex items-center gap-2 text-[#6B5E55] dark:text-[#A89A90] cursor-pointer">
             <input type="checkbox" checked class="w-4 h-4 rounded text-[#B96B4B] focus:ring-[#B96B4B] accent-[#B96B4B]" />
             <span>Remember my session</span>
           </label>
         </div>
 
         <!-- Login Button -->
-        <button type="submit" class="w-full py-3.5 btn-terracotta rounded-xl font-semibold text-xs uppercase tracking-wider shadow-lg flex items-center justify-center space-x-2">
+        <button type="submit" class="w-full py-3.5 btn-terracotta rounded-xl font-semibold text-xs uppercase tracking-wider shadow-lg flex items-center justify-center gap-2">
           <span>Sign In to Account</span>
           <i data-lucide="arrow-right" class="w-4 h-4"></i>
         </button>
@@ -139,7 +139,7 @@
         </div>
 
         <!-- Google, Apple & Facebook Icon-only buttons -->
-        <div class="flex items-center justify-center space-x-4">
+        <div class="flex items-center justify-center gap-4">
           <!-- Google -->
           <button type="button" onclick="showToast('Authenticating with Google...', 'info')" class="w-12 h-12 rounded-full border border-[#E6D8C3] dark:border-[#382C24] hover:bg-[#FAF8F5] dark:hover:bg-[#251F1B] flex items-center justify-center transition shadow-sm hover:scale-105" title="Sign in with Google">
             <svg class="w-5 h-5" viewBox="0 0 24 24">
