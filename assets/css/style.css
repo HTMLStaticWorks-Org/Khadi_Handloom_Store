@@ -102,6 +102,14 @@ html.dark ::-webkit-scrollbar-track {
   background: #9C5335;
 }
 
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
 /* Glassmorphism & Sticky Header */
 .header-glass {
   backdrop-filter: blur(12px);
