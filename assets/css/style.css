@@ -339,4 +339,45 @@ html.dark .badge-forest {
   pointer-events: auto;
 }
 
+/* ==========================================================================
+   Quick View Modal - Precision Alignment & Responsiveness
+   ========================================================================== */
+#quick-view-modal {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 160 !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+#quick-view-modal.flex {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 1rem 0.75rem !important;
+}
+
+#quick-view-modal .quick-view-card,
+#quick-view-modal > div {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+  width: 100% !important;
+  max-width: min(92vw, 480px) !important;
+  box-sizing: border-box !important;
+}
+
+@media (min-width: 768px) {
+  #quick-view-modal.flex {
+    padding: 1.5rem !important;
+  }
+  #quick-view-modal .quick-view-card,
+  #quick-view-modal > div {
+    max-width: 48rem !important; /* 768px for desktop */
+  }
+}
+
+
 

@@ -441,6 +441,7 @@ function openQuickView(productId) {
   if (qvQty) qvQty.value = 1;
 
   // Open modal
+  modal.scrollTop = 0;
   modal.classList.remove('hidden');
   modal.classList.add('flex');
   document.body.style.overflow = 'hidden';
@@ -577,6 +578,16 @@ function bindGlobalEvents() {
     qvWishBtn.addEventListener('click', () => {
       if (!currentQuickViewProduct) return;
       toggleWishlist(currentQuickViewProduct.id);
+    });
+  }
+
+  // Quick view backdrop click to close
+  const qvModal = document.getElementById('quick-view-modal');
+  if (qvModal) {
+    qvModal.addEventListener('click', (e) => {
+      if (e.target === qvModal) {
+        closeQuickView();
+      }
     });
   }
 
