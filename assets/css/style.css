@@ -261,19 +261,13 @@ html.dark .kavira-card:hover {
 }
 
 /* Header Desktop Nav RTL alignment */
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   [dir="rtl"] header nav {
-    gap: 0.625rem !important;
+    gap: 1.5rem !important;
   }
   [dir="rtl"] header nav > * {
     margin-left: 0 !important;
     margin-right: 0 !important;
-  }
-}
-
-@media (min-width: 1280px) {
-  [dir="rtl"] header nav {
-    gap: 1.5rem !important;
   }
 }
 
@@ -284,16 +278,19 @@ html.dark .kavira-card:hover {
 }
 
 /* Header utilities RTL alignment */
+[dir="rtl"] header .hidden.xl\:flex.items-center:not(nav),
 [dir="rtl"] header .hidden.lg\:flex.items-center:not(nav) {
   gap: 0.5rem !important;
 }
 
 @media (min-width: 1280px) {
+  [dir="rtl"] header .hidden.xl\:flex.items-center:not(nav),
   [dir="rtl"] header .hidden.lg\:flex.items-center:not(nav) {
     gap: 0.75rem !important;
   }
 }
 
+[dir="rtl"] header .hidden.xl\:flex.items-center:not(nav) > *,
 [dir="rtl"] header .hidden.lg\:flex.items-center:not(nav) > * {
   margin-left: 0 !important;
   margin-right: 0 !important;
