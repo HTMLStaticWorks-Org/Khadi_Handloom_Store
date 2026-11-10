@@ -578,5 +578,27 @@ html.dark .badge-forest {
   }
 }
 
+/* ==========================================================================
+   Floating Back to Top Button & Footer Alignment in RTL
+   ========================================================================== */
+[dir="rtl"] #floating-back-to-top {
+  right: auto !important;
+  left: 1.5rem !important;
+}
+
+@media (min-width: 1024px) {
+  [dir="rtl"] footer .lg\:pe-12 {
+    padding-right: 0 !important;
+    padding-left: 3rem !important;
+  }
+}
+@media (min-width: 1280px) {
+  [dir="rtl"] footer .xl\:pe-14 {
+    padding-right: 0 !important;
+    padding-left: 3.5rem !important;
+  }
+}
+
+
 
 
